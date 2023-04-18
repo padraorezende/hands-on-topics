@@ -39,46 +39,46 @@ max_clique_size = max([len(clique) for clique in cliques])
 print(f"Limite inferior do clique máximo: {max_clique_size}")
 
 
-# # Utiliza um layout circular
-# pos = nx.circular_layout(G)
+# Utiliza um layout circular
+pos = nx.circular_layout(G)
 
-# # Desenha o grafo com as novas configurações
-# fig, ax = plt.subplots(figsize=(10, 8))
-# nx.draw(G, pos=pos, node_size=50, with_labels=True)
-# plt.title('Layout Circular')
-# plt.savefig(f'grafic/1.png', dpi=600)
-# plt.close()
+# Desenha o grafo com as novas configurações
+fig, ax = plt.subplots(figsize=(10, 8))
+nx.draw(G, pos=pos, node_size=50, with_labels=True)
+plt.title('Layout Circular')
+plt.savefig(f'grafic/1.png', dpi=600)
+plt.close()
 
-# # Utiliza um layout kamada-kawai
-# pos = nx.kamada_kawai_layout(G)
+# Utiliza um layout kamada-kawai
+pos = nx.kamada_kawai_layout(G)
 
-# # Desenha o grafo com as novas configurações
-# fig, ax = plt.subplots(figsize=(10, 8))
-# nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
-# plt.title('Layout Kamada-Kawai')
-# plt.savefig(f'grafic/2.png', dpi=600, bbox_inches='tight')
-# plt.close()
+# Desenha o grafo com as novas configurações
+fig, ax = plt.subplots(figsize=(10, 8))
+nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
+plt.title('Layout Kamada-Kawai')
+plt.savefig(f'grafic/2.png', dpi=600, bbox_inches='tight')
+plt.close()
 
-# # Utiliza um layout spring
-# fig, ax = plt.subplots(figsize=(10, 8))
-# pos = nx.spring_layout(G)
-# nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
-# plt.title('Spring Layout')
-# plt.savefig(f'grafic/3.png', dpi=600, bbox_inches='tight')
-# plt.close()
+# Utiliza um layout spring
+fig, ax = plt.subplots(figsize=(10, 8))
+pos = nx.spring_layout(G)
+nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
+plt.title('Spring Layout')
+plt.savefig(f'grafic/3.png', dpi=600, bbox_inches='tight')
+plt.close()
 
-# # Utiliza um layout spectral
-# fig, ax = plt.subplots(figsize=(10, 8))
-# pos = nx.spectral_layout(G)
-# nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
-# plt.title('Spectral Layout')
-# plt.savefig(f'grafic/4.png', dpi=600, bbox_inches='tight')
-# plt.close()
+# Utiliza um layout spectral
+fig, ax = plt.subplots(figsize=(10, 8))
+pos = nx.spectral_layout(G)
+nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
+plt.title('Spectral Layout')
+plt.savefig(f'grafic/4.png', dpi=600, bbox_inches='tight')
+plt.close()
 
-# # Utiliza um layout random
-# fig, ax = plt.subplots(figsize=(10, 8))
-# pos = nx.random_layout(G)
-# nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
-# plt.title('Random Layout')
-# plt.savefig(f'grafic/5.png', dpi=600, bbox_inches='tight')
-# plt.close()
+# Utiliza um layout random
+fig, ax = plt.subplots(figsize=(10, 8))
+pos = nx.random_layout(G)
+nx.draw_networkx(G, pos=pos, node_size=100, with_labels=False)
+plt.title('Random Layout')
+plt.savefig(f'grafic/5.png', dpi=600, bbox_inches='tight')
+plt.close()
